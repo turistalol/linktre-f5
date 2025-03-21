@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('https://fonts.cdnfonts.com/css/neue-machina') format('woff2');
+}
+
+@layer base {
+  body {
+    font-family: 'Neue Machina', system-ui, sans-serif;
+  }
+}
+
+.link-button {
+  @apply w-full px-6 py-4 rounded-xl transition-all duration-300 ease-in-out 
+         bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl 
+         hover:translate-y-[-2px] hover:bg-white/95;
+}
+
+.social-icon {
+  @apply transition-transform duration-300 ease-in-out hover:scale-110;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #323B92 0%, #D9D9D9 100%);
+  opacity: 0.1;
+}
